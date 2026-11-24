@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name | Portfolio</title>
+  <meta name="description" content="Personal portfolio of Your Name, a web development student.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="#home" class="logo">Your Name</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="nav" class="nav">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button class="theme-btn" id="themeBtn" aria-label="Switch to dark theme">Dark</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="hero-small">Hi, I'm Your Name.</p>
+        <h1>I build <span id="typed" aria-live="off"></span><span class="cursor" aria-hidden="true">|</span></h1>
+        <p class="hero-lead">A web development student learning HTML, CSS and JavaScript by making real things.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">See my projects</a>
+          <a href="#contact" class="btn btn-ghost">Contact me</a>
+        </div>
+      </div>
+      <div class="hero-photo" aria-hidden="true">
+        <!-- Replace the initials with <img src="images/me.jpg" alt="Your Name"> -->
+        <span>YN</span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2>About me</h2>
+      <div class="about-grid">
+        <p>I'm a student who enjoys turning ideas into working websites. I like clean layouts, small details that make a page feel good to use, and solving problems with code.</p>
+        <p>Outside of class I practise by rebuilding sites I admire, reading documentation, and finishing small projects. I'm looking for internships and entry-level front-end work.</p>
+      </div>
+      <ul class="facts">
+        <li><strong>Location</strong> Your City, Country</li>
+        <li><strong>Focus</strong> Front-end development</li>
+        <li><strong>Languages</strong> English, Your Language</li>
+      </ul>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <ol class="timeline">
+        <li>
+          <time>2024 – Present</time>
+          <h3>Web Development Course</h3>
+          <p>Your Institute. HTML, CSS, JavaScript, Git and GitHub.</p>
+        </li>
+        <li>
+          <time>2022 – 2024</time>
+          <h3>Bachelor's Degree / Diploma</h3>
+          <p>Your University or College. Add your subject and one highlight.</p>
+        </li>
+        <li>
+          <time>2020 – 2022</time>
+          <h3>Higher Secondary School</h3>
+          <p>Your School. Add your stream or major subjects.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills" id="skills-list">
+        <div class="skill" data-level="90"><div class="skill-top"><span>HTML5</span><span>90%</span></div><div class="bar"><div class="fill"></div></div></div>
+        <div class="skill" data-level="85"><div class="skill-top"><span>CSS3 and Flexbox/Grid</span><span>85%</span></div><div class="bar"><div class="fill"></div></div></div>
+        <div class="skill" data-level="75"><div class="skill-top"><span>JavaScript</span><span>75%</span></div><div class="bar"><div class="fill"></div></div></div>
+        <div class="skill" data-level="70"><div class="skill-top"><span>Git and GitHub</span><span>70%</span></div><div class="bar"><div class="fill"></div></div></div>
+        <div class="skill" data-level="80"><div class="skill-top"><span>Responsive design</span><span>80%</span></div><div class="bar"><div class="fill"></div></div></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="html">HTML/CSS</button>
+        <button class="chip" data-filter="js">JavaScript</button>
+      </div>
+      <div class="projects">
+        <article class="project" data-type="js">
+          <h3>To-do List App</h3>
+          <p>Add, complete and delete tasks. Tasks stay saved after you reload, using localStorage.</p>
+          <p class="tags">HTML, CSS, JavaScript</p>
+          <div class="links"><a href="#" target="_blank" rel="noopener">Live demo</a><a href="#" target="_blank" rel="noopener">Code</a></div>
+        </article>
+        <article class="project" data-type="html">
+          <h3>Restaurant Landing Page</h3>
+          <p>A responsive one-page site with a menu, gallery and booking section.</p>
+          <p class="tags">HTML, CSS</p>
+          <div class="links"><a href="#" target="_blank" rel="noopener">Live demo</a><a href="#" target="_blank" rel="noopener">Code</a></div>
+        </article>
+        <article class="project" data-type="js">
+          <h3>Weather Dashboard</h3>
+          <p>Search any city and see the current weather, fetched from a public API.</p>
+          <p class="tags">HTML, CSS, JavaScript, API</p>
+          <div class="links"><a href="#" target="_blank" rel="noopener">Live demo</a><a href="#" target="_blank" rel="noopener">Code</a></div>
+        </article>
+        <article class="project" data-type="html">
+          <h3>Personal Blog Layout</h3>
+          <p>A reading-focused blog template using CSS Grid and custom properties.</p>
+          <p class="tags">HTML, CSS</p>
+          <div class="links"><a href="#" target="_blank" rel="noopener">Live demo</a><a href="#" target="_blank" rel="noopener">Code</a></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p class="contact-lead">Have a project or an opportunity? Send me a message.</p>
+      <div class="contact-grid">
+        <form id="contactForm" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+          <small class="error" id="nameErr"></small>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+          <small class="error" id="emailErr"></small>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <small class="error" id="msgErr"></small>
+
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+        <ul class="contact-info">
+          <li><strong>Email</strong> <a href="mailto:you@example.com">you@example.com</a></li>
+          <li><strong>GitHub</strong> <a href="https://github.com/your-username" target="_blank" rel="noopener">github.com/your-username</a></li>
+          <li><strong>LinkedIn</strong> <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener">linkedin.com/in/your-username</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Your Name. Built with HTML, CSS and JavaScript.</p>
+    <a href="#home">Back to top</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
