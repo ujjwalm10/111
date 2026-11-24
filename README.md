@@ -3,7 +3,7 @@
 A responsive personal portfolio website built with HTML, CSS and JavaScript as part of a college assignment.
 
 **Live site:**  https://ujjwalm10.github.io/111/
-**Repository:** https://github.com/ujjwal-code33/portfolio
+**Repository:** https://github.com/ujjwalm10/111
 
 ## About
 
